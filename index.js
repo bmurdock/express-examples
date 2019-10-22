@@ -1,5 +1,5 @@
 const http = require('http');
-const port = 8080;
+const port = process.env.PORT || 3000;
 
 const server = http.createServer((request, response) => {
     response.setHeader('Content-Type', 'text/html');
